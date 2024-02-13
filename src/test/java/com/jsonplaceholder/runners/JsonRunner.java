@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        tags = "@Getposts",
+        tags = "@Getalbums",
         glue = "com.jsonplaceholder.stepDefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )

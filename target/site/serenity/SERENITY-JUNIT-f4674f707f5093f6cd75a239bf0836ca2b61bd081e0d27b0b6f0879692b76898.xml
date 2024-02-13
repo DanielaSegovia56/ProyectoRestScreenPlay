@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Review albums" skipped="0" tests="1" time="6.93" timestamp="2024-02-13 06:32:40"><testcase name="Review album to manage them"><error message="com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.jsonplaceholder.models.albumsModel.ResponseArrayAlbum` from Array value (token `JsonToken.START_ARRAY`)&#10; at [Source: (String)&quot;[&#10;  {&#10;    &quot;userId&quot;: 1,&#10;    &quot;id&quot;: 1,&#10;    &quot;title&quot;: &quot;quidem molestiae enim&quot;&#10;  },&#10;  {&#10;    &quot;userId&quot;: 1,&#10;    &quot;id&quot;: 2,&#10;    &quot;title&quot;: &quot;sunt qui excepturi placeat culpa&quot;&#10;  },&#10;  {&#10;    &quot;userId&quot;: 1,&#10;    &quot;id&quot;: 3,&#10;    &quot;title&quot;: &quot;omnis laborum odio&quot;&#10;  },&#10;  {&#10;    &quot;userId&quot;: 1,&#10;    &quot;id&quot;: 4,&#10;    &quot;title&quot;: &quot;non esse culpa molestiae omnis sed optio&quot;&#10;  },&#10;  {&#10;    &quot;userId&quot;: 1,&#10;    &quot;id&quot;: 5,&#10;    &quot;title&quot;: &quot;eaque aut omnis a&quot;&#10;  },&#10;  {&#10;    &quot;userId&quot;: 1,&#10;    &quot;id&quot;: 6,&#10;    &quot;title&quot;: &quot;natus impedit quibusdam illo est&quot;&#10;  },&#10;  {&#10;    &quot;[truncated 8833 chars]; line: 1, column: 1]" type="java.lang.AssertionError">com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.jsonplaceholder.models.albumsModel.ResponseArrayAlbum` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "quidem molestiae enim"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "sunt qui excepturi placeat culpa"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "omnis laborum odio"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "non esse culpa molestiae omnis sed optio"
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "eaque aut omnis a"
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "natus impedit quibusdam illo est"
+  },
+  {
+    "[truncated 8833 chars]; line: 1, column: 1]</error><system-err>com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.jsonplaceholder.models.albumsModel.ResponseArrayAlbum` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "quidem molestiae enim"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "sunt qui excepturi placeat culpa"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "title": "omnis laborum odio"
+  },
+  {
+    "userId": 1,
+    "id": 4,
+    "title": "non esse culpa molestiae omnis sed optio"
+  },
+  {
+    "userId": 1,
+    "id": 5,
+    "title": "eaque aut omnis a"
+  },
+  {
+    "userId": 1,
+    "id": 6,
+    "title": "natus impedit quibusdam illo est"
+  },
+  {
+    "[truncated 8833 chars]; line: 1, column: 1]&#13;
+com.jsonplaceholder.stepDefinitions.JsonAlbumStepDefinitions.iWillBeAbleToSeeTheAvailableAlbums(JsonAlbumStepDefinitions.java:27)&#13;
+✽.I will be able to see the available albums(file:///C:/Users/SQA/Desktop/RepasoScreenPlay/src/test/resources/features/viewAlbums.feature:6)&#13;
+</system-err></testcase></testsuite>
