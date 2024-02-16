@@ -1,6 +1,5 @@
 package com.jsonplaceholder.stepDefinitions;
 
-import com.jsonplaceholder.questions.ResponseServerCode;
 import com.jsonplaceholder.questions.postsQuestion.ResponsePost;
 import com.jsonplaceholder.tasks.postsTask.GetManagmentPostsTask;
 import io.cucumber.java.en.*;
@@ -26,10 +25,13 @@ public class JsonStepDefinitions {
     public void iWillBeAbleToSeeTheAvailablePosts() {
         admin.should(
                 seeThat(
-                        ResponseServerCode.was(),
-                        equalTo(200)
+                        "The title is",
+                        res -> new ResponsePost().answeredBy(admin).get(0).getTitle(),
+                        equalTo("sunt aut facere repellat provident occaecati excepturi optio reprehenderit")
                 )
         );
+
+
     }
 
 

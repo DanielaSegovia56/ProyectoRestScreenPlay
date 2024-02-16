@@ -1,6 +1,6 @@
 package com.jsonplaceholder.models.albumsModel;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

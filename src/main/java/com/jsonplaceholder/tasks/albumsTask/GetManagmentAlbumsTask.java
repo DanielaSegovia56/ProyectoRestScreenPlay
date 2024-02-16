@@ -1,6 +1,5 @@
 package com.jsonplaceholder.tasks.albumsTask;
 
-import com.jsonplaceholder.tasks.postsTask.GetManagmentPostsTask;
 import io.restassured.http.ContentType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -13,7 +12,7 @@ public class GetManagmentAlbumsTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Get.resource("/albums").with(
-                        req -> req
+                        requestSpecification -> requestSpecification
                                 .contentType(ContentType.JSON)
                                 .header("Accept","*/*")
                                 .log().all()

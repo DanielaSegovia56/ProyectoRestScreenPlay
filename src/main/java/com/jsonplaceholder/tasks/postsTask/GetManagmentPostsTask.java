@@ -14,7 +14,7 @@ public class GetManagmentPostsTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Get.resource("/posts").with(
-                        req -> req
+                        requestSpecification -> requestSpecification
                                 .contentType(ContentType.JSON)
                                 .header("Accept","*/*")
                                 .log().all()
@@ -24,7 +24,6 @@ public class GetManagmentPostsTask implements Task {
     }
 
     public static GetManagmentPostsTask GetPost(){
-
         return instrumented(GetManagmentPostsTask.class);
     }
 }
